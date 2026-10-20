@@ -1,0 +1,76 @@
+<!-- ======================================================
+Lab 5 - index.html
+======================================================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Photo Club Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Join the Travel Photo Club</h1>
+</header>
+<main>
+    <section id="gallery">
+        <h2>Featured Shots (Select to Learn More)</h2>
+        <div class="gallery-grid">
+            <div class="thumb" tabindex="0" data-city="Paris">
+                <img alt="Paris travel photo"
+                     src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800"/>
+            </div>
+            <div class="thumb" tabindex="0" data-city="Tokyo">
+                <img alt="Tokyo travel photo"
+                     src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800" />
+            </div>
+
+            <div class="thumb" tabindex="0" data-city="New York">
+                <img alt="New York travel photo"
+                     src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=800" />
+            </div>
+
+            <div class="thumb" tabindex="0" data-city="Venice">
+                <img alt="Venice travel photo"
+                     src="https://images.unsplash.com/photo-1514890547357-a9ee288728e0?w=800" />
+            </div>
+
+            <div class="thumb" tabindex="0" data-city="Sydney">
+                <img alt="Sydney travel photo"
+                     src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800" />
+            </div>
+        </div>
+        <p id="image-caption"> Click (or press Enter) to select.</p>
+    </section>
+    <section id="registration">
+        <h2>Member Sign Up</h2>
+        <form id="signup-form" novalidate>
+            <div class="form-group">
+                <label for="username" id="label-1">Username:</label>
+                <input type="text" id="username" name="username">
+                <span class="error-msg" id="error-username"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <span class="error-msg" id="error-email"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <span class="error-msg" id="error-password"></span>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="terms"> I agree to the terms
+                </label>
+                <span class="error-msg" id="error-terms"></span>
+            </div>
+            <button type="submit">Register Now</button>
+        </form>
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
